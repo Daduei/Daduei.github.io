@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Circle Calculator</title>
+  <script>
+    function calculateCircle() {
+      let radius = parseFloat(prompt("Enter the radius of the circle:"));
+      const PI = 3.14;
+
+      if (isNaN(radius)) {
+        alert("Please enter a valid number!");
+        return;
+      }
+
+      let perimeter = 2 * PI * radius;
+      let area = PI * radius * radius;
+
+      alert(`Perimeter (circumference): ${perimeter}\nArea: ${area}`);
+    }
+  </script>
+</head>
+<body onload="calculateCircle()">
+</body>
+</html>
