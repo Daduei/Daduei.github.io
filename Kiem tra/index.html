@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+</head>
+<body>
+    <form id="newsletter-form">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name"  required> 
+        
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <fieldset>
+            <legend>Subscription Type:</legend>
+            <label for="monthly">
+                <input type="radio" id="monthly" name="subscription-type" value="monthly" required> Monthly
+            </label>
+            <label for="yearly">
+                <input type="radio" id="yearly" name="subscription-type" value="yearly"> Yearly
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Interests:</legend>
+            <label for="Football">
+                <input type="checkbox" id="interest1" name="interests" value="interest1"> Interest 1
+            </label>
+            <label for="badminton">
+                <input type="checkbox" id="interest2" name="interests" value="interest2"> Interest 2
+            </label>
+        </fieldset>
+
+        <button type="submit">Success</button>
+        
+    
+</body>
+    
+</html>
